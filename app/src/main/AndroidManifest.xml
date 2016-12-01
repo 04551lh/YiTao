@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.feicui.android.yitao">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:name=".ShopApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Presentation.main.MainActivity">
+        </activity>
+        <activity android:name=".Presentation.Other.GoodsActivity"/>
+        <activity android:name=".Presentation.main.MySelf.MyInformation.LoginActivity"/>
+        <activity android:name=".Presentation.main.MySelf.MyInformation.RegisterActivity"/>
+        <activity android:name=".Presentation.main.MySelf.MyInformation.Information"/>
+        <activity android:name=".Presentation.main.MySelf.MyInformation.Rename"/>
+        <activity android:name=".Presentation.main.MySelf.MyShop"/>
+        <activity android:name=".Presentation.main.MySelf.UpShop.MyCamera">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Presentation.main.MySelf.UpShop.UpShopActivity">
+        </activity>
+        <activity android:name=".Presentation.main.MySelf.UpShop.ImageDetailActivity"/>
+    </application>
+
+</manifest>

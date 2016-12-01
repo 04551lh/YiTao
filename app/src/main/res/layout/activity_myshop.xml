@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_layout_myshop"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/myshop_toolbar"
+            android:background="@color/moccasin">
+            <ImageView
+                android:layout_gravity="right"
+                android:src="@drawable/menu"
+                android:id="@+id/myshop_title"
+                android:layout_width="@dimen/dp_45"
+                android:layout_height="@dimen/dp_45" />
+        <TextView
+            android:id="@+id/myshop_tv_title"
+            android:visibility="gone"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:text="@string/Remove"
+            android:layout_width="@dimen/dp_45"
+            android:layout_height="@dimen/dp_45" />
+        </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:id="@+id/ll_type"
+        android:layout_below="@+id/myshop_toolbar"
+        android:layout_margin="@dimen/dp_10"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_myshop_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/ll_type"
+        android:id="@+id/rv_myshop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_myshop_bt"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+       <TextView
+           android:background="@drawable/button_backgroud"
+           android:gravity="center"
+           android:id="@+id/bt_myhsop_allremove"
+           android:textSize="@dimen/dp_20"
+           android:textColor="@color/text_color_hint"
+           android:text="@string/AllRemove"
+           android:layout_margin="@dimen/dp_10"
+           android:layout_weight="1"
+           android:layout_width="@dimen/layout"
+           android:layout_height="match_parent" />
+        <TextView
+            android:enabled="false"
+            android:background="@drawable/normalbutton_normal"
+            android:gravity="center"
+            android:id="@+id/bt_myshop_remove"
+            android:textSize="@dimen/dp_20"
+            android:textColor="@color/text_color_hint"
+            android:text="@string/Remove"
+            android:layout_margin="@dimen/dp_10"
+            android:layout_weight="1"
+            android:layout_width="@dimen/layout"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/myshop_type"
+        android:text="@string/ALL"
+        android:textColor="@color/text_color_hint"
+        android:textSize="@dimen/sp_20"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rv_myshop"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

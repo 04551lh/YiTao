@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rl_mycamera"
+    android:layout_height="match_parent">
+    <include layout="@layout/title"
+        android:id="@+id/include"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_mycamera"
+        android:layout_below="@+id/include"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120">
+        <android.support.v7.widget.RecyclerView
+            android:layout_weight="1"
+            android:id="@+id/rv_mycamera_select"
+            android:layout_width="@dimen/layout"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+        <LinearLayout
+            android:id="@+id/ll_finish"
+            android:orientation="vertical"
+            android:background="@color/cadetblue"
+            android:layout_weight="0"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/mycamera_count"
+                android:gravity="bottom"
+                android:layout_weight="1"
+                android:text="0/8"
+                android:textColor="@color/text_color_hint"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/mycamera_done"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="@color/text_color_hint"
+                android:text="@string/True"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

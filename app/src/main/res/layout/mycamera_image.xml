@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="@dimen/dp_3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:background="@color/gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            android:id="@+id/mycamera_firstimage"
+            android:layout_margin="@dimen/dp_3"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/dp_100"
+            android:layout_height="@dimen/dp_100" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
